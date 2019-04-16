@@ -168,8 +168,8 @@
     const menu = document.querySelector('.menu');
     const burgerButton = document.querySelector('#burger-menu');
     burgerButton.addEventListener('click', hideShow);
-
     ipad.addListener(validation);
+    validation(ipad);
 
     function validation (event){
       if (event.matches){
@@ -187,6 +187,9 @@
       }
     }
   </script>
+  <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
+//]]></script>
 </body>
 
 </html>
